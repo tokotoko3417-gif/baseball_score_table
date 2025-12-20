@@ -67,6 +67,7 @@ const image_distance03 ="irastoHIT/0_S_t_hit.png";
 
 const image_angle01_01 ="irastoHIT/grounder/AUT/first/0_D_1to3.png"; //ゴロアウトの時の送球方向
 const image_angle01_02 ="irastoHIT/grounder/AUT/first/0_D_2to3.png"; //一塁に送球
+const image_angle01_03 ="irastoHIT/grounder/AUT/first/0_A_3a.png";
 const image_angle01_04 ="irastoHIT/grounder/AUT/first/0_D_4to3.png";
 const image_angle01_05 ="irastoHIT/grounder/AUT/first/0_D_5to3.png";
 const image_angle01_06 ="irastoHIT/grounder/AUT/first/0_D_6to3.png";
@@ -77,6 +78,7 @@ const image_angle01_09 ="irastoHIT/grounder/AUT/first/0_D_9to1.png";
 const image_angle04_01 ="irastoHIT/grounder/AUT/second/0_D_1to4.png"; //二塁に送球
 const image_angle04_02 ="irastoHIT/grounder/AUT/second/0_D_2to4.png";
 const image_angle04_03 ="irastoHIT/grounder/AUT/second/0_D_3to4.png";
+const image_angle04_04 ="irastoHIT/grounder/AUT/second/0_A_4b.png";
 const image_angle04_05 ="irastoHIT/grounder/AUT/second/0_D_5to4.png";
 const image_angle04_06 ="irastoHIT/grounder/AUT/second/0_D_6to4.png";
 const image_angle04_07 ="irastoHIT/grounder/AUT/second/0_D_7to4.png";
@@ -87,12 +89,14 @@ const image_angle05_01 ="irastoHIT/grounder/AUT/third/0_D_1to5.png"; //三塁に
 const image_angle05_02 ="irastoHIT/grounder/AUT/third/0_D_2to5.png";
 const image_angle05_03 ="irastoHIT/grounder/AUT/third/0_D_3to5.png";
 const image_angle05_04 ="irastoHIT/grounder/AUT/third/0_D_4to5.png";
+const image_angle05_05 ="irastoHIT/grounder/AUT/third/0_A_5c.png";
 const image_angle05_06 ="irastoHIT/grounder/AUT/third/0_D_6to5.png";
 const image_angle05_07 ="irastoHIT/grounder/AUT/third/0_D_7to5.png";
 const image_angle05_08 ="irastoHIT/grounder/AUT/third/0_D_8to5.png";
 const image_angle05_09 ="irastoHIT/grounder/AUT/third/0_D_9to5.png";
 
 const image_angle02_01 ="irastoHIT/grounder/AUT/home/0_D_1to2.png"; //本塁に送球
+const image_angle02_02 ="irastoHIT/grounder/AUT/home/0_A_2h.png";
 const image_angle02_03 ="irastoHIT/grounder/AUT/home/0_D_3to2.png";
 const image_angle02_04 ="irastoHIT/grounder/AUT/home/0_D_4to2.png";
 const image_angle02_05 ="irastoHIT/grounder/AUT/home/0_D_5to2.png";
@@ -1308,10 +1312,10 @@ function finalizeThrow(throwTarget) {
   // 送球先画像マップ（存在する定数のみ参照）
   const map = {
     '1': { first: image_angle01_01, second: image_angle04_01, third: image_angle05_01, home: image_angle02_01 },
-    '2': { first: image_angle01_02, second: image_angle04_02, third: image_angle05_02, home: null },
-    '3': { first: image_angle01_04, second: image_angle04_03, third: image_angle05_03, home: image_angle02_03 },
-    '4': { first: image_angle01_04, second: image_angle04_05, third: image_angle05_04, home: image_angle02_04 },
-    '5': { first: image_angle01_05, second: image_angle04_05, third: image_angle05_06, home: image_angle02_05 },
+    '2': { first: image_angle01_02, second: image_angle04_02, third: image_angle05_02, home: image_angle02_02 },
+    '3': { first: image_angle01_03, second: image_angle04_03, third: image_angle05_03, home: image_angle02_03 },
+    '4': { first: image_angle01_04, second: image_angle04_04, third: image_angle05_04, home: image_angle02_04 },
+    '5': { first: image_angle01_05, second: image_angle04_05, third: image_angle05_05, home: image_angle02_05 },
     '6': { first: image_angle01_06, second: image_angle04_06, third: image_angle05_06, home: image_angle02_06 },
     '7': { first: image_angle01_07, second: image_angle04_07, third: image_angle05_07, home: image_angle02_07 },
     '8': { first: image_angle01_08, second: image_angle04_08, third: image_angle05_08, home: image_angle02_08 },
